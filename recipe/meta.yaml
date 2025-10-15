@@ -1,5 +1,5 @@
 {% set name = "pysbf2" %}
-{% set version = "1.0.0" %}
+{% set version = "1.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pysbf2-{{ version }}.tar.gz
-  sha256: 245755bc9d1eaec0f05bc8a978b16f3a1fce9b721f9168b17c330042b616fad3
+  sha256: 10b579b298550b628283d580227152b9222892500ec4dd7e09dce67c79573b0f
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
@@ -21,8 +21,8 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - pynmeagps >=1.0.50
-    - pyrtcm >=1.1.8
+    - pynmeagps >=1.0.54
+    - pyrtcm >=1.1.9
 
 test:
   imports:
