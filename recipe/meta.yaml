@@ -1,5 +1,5 @@
 {% set name = "pysbf2" %}
-{% set version = "1.0.5" %}
+{% set version = "1.0.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pysbf2-{{ version }}.tar.gz
-  sha256: 35c768ba5077dcef2911e3588b922c708a3420b41cfedcfec8f865ab34bee76f
+  sha256: c85fae67f79441f463d598a97f4c832a73627958098f778308980355a5d565a9
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
